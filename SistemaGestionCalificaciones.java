@@ -223,7 +223,7 @@ class GestorCurso {
         System.out.printf("   Reprobados: %d (%.2f%%)%n", stats.reprobados, porcentajeReprobados);
         System.out.println("   Total: " + total);
         
-        System.out.println("\n📉 5. DISTRIBUCIÓN DE CALIFICACIONES:");
+        System.out.println("\n 5. DISTRIBUCIÓN DE CALIFICACIONES:");
         System.out.println("-".repeat(80));
         DistribucionCalificaciones dist = generarDistribucionCalificaciones();
         System.out.println("   Excelente (≥4.5):    " + dist.excelente + " estudiantes");
@@ -294,7 +294,7 @@ public class SistemaGestionCalificaciones {
             scanner.nextLine();
             
             // Ingresar calificaciones
-            System.out.println("\nIngrese las calificaciones (0.0 - 5.0):");
+            System.out.println("\nIngrese las calificaciones (0,0 - 5,0):");
             for (int j = 0; j < numCalificaciones; j++) {
                 System.out.print("  Calificación " + (j + 1) + ": ");
                 double nota = scanner.nextDouble();
